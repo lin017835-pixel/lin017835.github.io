@@ -1,5 +1,39 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>林君浩</title><link>https://lin017835-pixel.github.io/lin017835.github.io</link><description>个人博客</description><copyright>林君浩</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/358701160?v=4&amp;size=64</url><title>avatar</title><link>https://lin017835-pixel.github.io/lin017835.github.io</link></image><lastBuildDate>Sat, 21 Nov 2026 08:30:27 +0000</lastBuildDate><managingEditor>林君浩</managingEditor><ttl>60</ttl><webMaster>林君浩</webMaster><item><title>求整数位数及各位数字之和</title><link>https://lin017835-pixel.github.io/lin017835.github.io/post/qiu-zheng-shu-wei-shu-ji-ge-wei-shu-zi-zhi-he.html</link><description># 求整数位数及各位数字之和 😸 :
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>林君浩</title><link>https://lin017835-pixel.github.io/lin017835.github.io</link><description>个人博客</description><copyright>林君浩</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/358701160?v=4&amp;size=64</url><title>avatar</title><link>https://lin017835-pixel.github.io/lin017835.github.io</link></image><lastBuildDate>Sat, 21 Nov 2026 14:57:47 +0000</lastBuildDate><managingEditor>林君浩</managingEditor><ttl>60</ttl><webMaster>林君浩</webMaster><item><title>查找最小值</title><link>https://lin017835-pixel.github.io/lin017835.github.io/post/cha-zhao-zui-xiao-zhi.html</link><description># C语言中的最小值查找 🐰 
+
+```c
+#include &lt;stdio.h&gt;
+
+int main(void)
+{
+    int n;
+    int num1;
+    int MIN;
+
+    scanf('%d', &amp;n);
+    scanf('%d', &amp;num1);
+
+    /* 将第一个数字作为当前的最小值 */
+    MIN = num1;
+
+    for (int i = 1; i &lt; n; i++)
+    {
+        /* 每次读取后立即进行比较 */
+        if (num1 &lt; MIN)
+        {
+            MIN = num1;
+        }
+
+        scanf('%d', &amp;num1);
+    }
+
+    printf('min = %d', MIN);
+
+    return 0;
+}
+```
+# 总结
+&gt; ## 在代码中，我将最开始的num1存入在MIN里，接着更新num1的值，再将跟新后的num1的值和MIN比较，若比MIN小就取代！。</description><guid isPermaLink="true">https://lin017835-pixel.github.io/lin017835.github.io/post/cha-zhao-zui-xiao-zhi.html</guid><pubDate>Sat, 21 Nov 2026 14:57:19 +0000</pubDate></item><item><title>求整数位数及各位数字之和</title><link>https://lin017835-pixel.github.io/lin017835.github.io/post/qiu-zheng-shu-wei-shu-ji-ge-wei-shu-zi-zhi-he.html</link><description># 求整数位数及各位数字之和 😸 :
 ## 完整代码 
 ```c
 #include&lt;stdio.h&gt;
