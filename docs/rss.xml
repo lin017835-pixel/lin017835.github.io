@@ -1,5 +1,32 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>林君浩</title><link>https://lin017835-pixel.github.io/lin017835.github.io</link><description>个人博客</description><copyright>林君浩</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/358701160?v=4&amp;size=64</url><title>avatar</title><link>https://lin017835-pixel.github.io/lin017835.github.io</link></image><lastBuildDate>Sat, 21 Nov 2026 07:47:15 +0000</lastBuildDate><managingEditor>林君浩</managingEditor><ttl>60</ttl><webMaster>林君浩</webMaster><item><title>求奇数和</title><link>https://lin017835-pixel.github.io/lin017835.github.io/post/qiu-qi-shu-he.html</link><description># 求奇数和
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>林君浩</title><link>https://lin017835-pixel.github.io/lin017835.github.io</link><description>个人博客</description><copyright>林君浩</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/358701160?v=4&amp;size=64</url><title>avatar</title><link>https://lin017835-pixel.github.io/lin017835.github.io</link></image><lastBuildDate>Sat, 21 Nov 2026 08:30:27 +0000</lastBuildDate><managingEditor>林君浩</managingEditor><ttl>60</ttl><webMaster>林君浩</webMaster><item><title>求整数位数及各位数字之和</title><link>https://lin017835-pixel.github.io/lin017835.github.io/post/qiu-zheng-shu-wei-shu-ji-ge-wei-shu-zi-zhi-he.html</link><description># 求整数位数及各位数字之和 😸 :
+## 完整代码 
+```c
+#include&lt;stdio.h&gt;
+int main()
+{
+	int n,weishu,sum = 0;
+	scanf('%d',&amp;n);
+	while(n &gt; 0)
+	{
+		sum = sum + n % 10;
+		n = n / 10;
+		weishu = weishu + 1;
+	}
+	printf('%d %d',weishu,sum);
+	return 0;
+}
+```
+
+#  总结 ：
+
+
+
+## 技巧
+### `sum = sum + n % 10`用来求个位是什么数
+### 得到个位数之后把个位数加进sum里，然后再用`n = n / 10`将个位数去除，最后`weishu = weishu + 1` 记录位数
+
+。</description><guid isPermaLink="true">https://lin017835-pixel.github.io/lin017835.github.io/post/qiu-zheng-shu-wei-shu-ji-ge-wei-shu-zi-zhi-he.html</guid><pubDate>Sat, 21 Nov 2026 08:29:51 +0000</pubDate></item><item><title>求奇数和</title><link>https://lin017835-pixel.github.io/lin017835.github.io/post/qiu-qi-shu-he.html</link><description># 求奇数和
 完整代码
 ```c
 #include&lt;stdio.h&gt;
