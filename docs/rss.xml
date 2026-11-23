@@ -1,5 +1,28 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>林君浩</title><link>https://lin017835-pixel.github.io/lin017835.github.io</link><description>个人博客</description><copyright>林君浩</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/358701160?v=4&amp;size=64</url><title>avatar</title><link>https://lin017835-pixel.github.io/lin017835.github.io</link></image><lastBuildDate>Sat, 21 Nov 2026 14:57:47 +0000</lastBuildDate><managingEditor>林君浩</managingEditor><ttl>60</ttl><webMaster>林君浩</webMaster><item><title>查找最小值</title><link>https://lin017835-pixel.github.io/lin017835.github.io/post/cha-zhao-zui-xiao-zhi.html</link><description># C语言中的最小值查找 🐰 
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>林君浩</title><link>https://lin017835-pixel.github.io/lin017835.github.io</link><description>个人博客</description><copyright>林君浩</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/358701160?v=4&amp;size=64</url><title>avatar</title><link>https://lin017835-pixel.github.io/lin017835.github.io</link></image><lastBuildDate>Mon, 23 Nov 2026 06:18:00 +0000</lastBuildDate><managingEditor>林君浩</managingEditor><ttl>60</ttl><webMaster>林君浩</webMaster><item><title>数字金字塔</title><link>https://lin017835-pixel.github.io/lin017835.github.io/post/shu-zi-jin-zi-ta.html</link><description># 数字金字塔
+## 实现代码
+```c
+#include&lt;stdio.h&gt;
+int main()
+{
+	int i,j,n;
+	scanf('%d',&amp;n);
+	for(i = 0 ; i &lt;= n ; i = i + 1)
+	{
+		for(j = 0 ; j &lt; n - i ; j = j + 1)
+		{
+			printf(' ');
+		}
+		for(j = 0 ; j &lt; i ; j = j + 1)
+		{
+			printf('%2d',i);
+		}
+		printf('\n');
+	}
+	return 0;
+}
+```
+。</description><guid isPermaLink="true">https://lin017835-pixel.github.io/lin017835.github.io/post/shu-zi-jin-zi-ta.html</guid><pubDate>Mon, 23 Nov 2026 06:17:25 +0000</pubDate></item><item><title>查找最小值</title><link>https://lin017835-pixel.github.io/lin017835.github.io/post/cha-zhao-zui-xiao-zhi.html</link><description># C语言中的最小值查找 🐰 
 
 ```c
 #include &lt;stdio.h&gt;
